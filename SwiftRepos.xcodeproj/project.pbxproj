@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84F97D702CAF5DDD00EC1C21 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84F97D6F2CAF5DDD00EC1C21 /* Alamofire */; };
 		854295082431839800A269DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854295072431839800A269DD /* AppDelegate.swift */; };
 		8542950A2431839800A269DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854295092431839800A269DD /* SceneDelegate.swift */; };
 		8542950C2431839800A269DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542950B2431839800A269DD /* ContentView.swift */; };
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F97D702CAF5DDD00EC1C21 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +170,9 @@
 				Base,
 			);
 			mainGroup = 854294FB2431839800A269DD;
+			packageReferences = (
+				84F97D662CAF4F4400EC1C21 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 854295052431839800A269DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -396,6 +401,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84F97D662CAF4F4400EC1C21 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84F97D6F2CAF5DDD00EC1C21 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84F97D662CAF4F4400EC1C21 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 854294FC2431839800A269DD /* Project object */;
 }
